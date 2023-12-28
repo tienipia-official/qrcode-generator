@@ -1,0 +1,27 @@
+{
+  "name": "qrcode-generator-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "build": {
+    "productName": "QR Code Generator",
+    "appId": "qrcode.generator.app",
+    "asar": true,
+    "win": {
+      "target": "zip"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "start-dev": "NODE_ENV=develop electron .",
+    "release": "NODE_ENV=production electron-builder --win"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "asar": "^3.2.0",
+    "electron": "^28.1.0",
+    "electron-builder": "24.9.1",
+    "prettier": "^3.1.1",
+    "prettier-plugin-organize-attributes": "^1.0.0"
+  },
+  "packageManager": "yarn@4.0.2"
+}
